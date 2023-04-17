@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ControladorRegistro {
+public class RegisterController {
 	
 	private final InterfaceRepositorio repositorio;
 	
-	ControladorRegistro(InterfaceRepositorio repositorio){
+	RegisterController(InterfaceRepositorio repositorio){
 		this.repositorio = repositorio;
 	}
 	
