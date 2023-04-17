@@ -1,6 +1,6 @@
 package com.digitar120.registro;
 
-import com.digitar120.registro.exception.ExcepcionRegistroNoEncontrado;
+import com.digitar120.registro.exception.RegisterNotFoundException;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -35,7 +35,7 @@ public class ControladorRegistro {
 	// GET para un registro específico
 	@GetMapping("/registros/{id}")
 	Registro one(@PathVariable Integer id) {
-		return repositorio.findById(id).orElseThrow( () -> new ExcepcionRegistroNoEncontrado(id));
+		return repositorio.findById(id).orElseThrow(() -> new RegisterNotFoundException(id));
 	}
 	
 	// PUT para editar un registro

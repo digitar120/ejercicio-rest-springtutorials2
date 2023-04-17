@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
-public class ConsejoRegistroNoEncontrado {
+public class RegisterNotFoundAdvice {
 	
 	@ResponseBody
-	@ExceptionHandler(ExcepcionRegistroNoEncontrado.class)
+	@ExceptionHandler(RegisterNotFoundException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
-	String handlerRegistroNoEncontrado(ExcepcionRegistroNoEncontrado ex) {
+	String handlerRegistroNoEncontrado(RegisterNotFoundException ex) {
 		return ex.getMessage();
 	}
 }
