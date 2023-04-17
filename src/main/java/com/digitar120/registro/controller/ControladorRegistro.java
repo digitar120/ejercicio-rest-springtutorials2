@@ -1,5 +1,7 @@
-package com.digitar120.registro;
+package com.digitar120.registro.controller;
 
+import com.digitar120.registro.InterfaceRepositorio;
+import com.digitar120.registro.Registro;
 import com.digitar120.registro.exception.RegisterNotFoundException;
 import java.util.List;
 
