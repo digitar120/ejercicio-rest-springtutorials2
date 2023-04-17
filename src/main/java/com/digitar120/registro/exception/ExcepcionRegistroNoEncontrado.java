@@ -1,8 +1,8 @@
-package com.digitar120.registro;
+package com.digitar120.registro.exception;
 
 public class ExcepcionRegistroNoEncontrado extends RuntimeException {
 	
-	ExcepcionRegistroNoEncontrado(Integer id) {
+	public ExcepcionRegistroNoEncontrado(Integer id) {
 		super("No se encontró el registro N°" + id);
 	}
 

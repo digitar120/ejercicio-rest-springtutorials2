@@ -1,5 +1,6 @@
 package com.digitar120.registro;
 
+import com.digitar120.registro.exception.ExcepcionRegistroNoEncontrado;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
