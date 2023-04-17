@@ -1,6 +1,5 @@
 package com.digitar120.registro.controller;
 
-import com.digitar120.registro.repository.InterfaceRepositorio;
 import com.digitar120.registro.Registro;
 import com.digitar120.registro.exception.RegisterNotFoundException;
 import java.util.List;
@@ -12,13 +11,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import com.digitar120.registro.repository.IRepository;
 
 @RestController
 public class RegisterController {
 	
-	private final InterfaceRepositorio repositorio;
+	private final IRepository repositorio;
 	
-	RegisterController(InterfaceRepositorio repositorio){
+	RegisterController(IRepository repositorio){
 		this.repositorio = repositorio;
 	}
 	
