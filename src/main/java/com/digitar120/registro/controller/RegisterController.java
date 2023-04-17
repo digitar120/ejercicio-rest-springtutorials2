@@ -1,6 +1,6 @@
 package com.digitar120.registro.controller;
 
-import com.digitar120.registro.Registro;
+import com.digitar120.registro.model.Registro;
 import com.digitar120.registro.exception.RegisterNotFoundException;
 import java.util.List;
 

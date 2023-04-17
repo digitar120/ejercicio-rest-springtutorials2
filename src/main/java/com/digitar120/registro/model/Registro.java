@@ -1,4 +1,4 @@
-package com.digitar120.registro;
+package com.digitar120.registro.model;
 
 import java.util.Objects;
 
