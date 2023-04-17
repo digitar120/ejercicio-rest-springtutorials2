@@ -8,14 +8,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Registro {
+public class Register {
 	
 	private @Id @GeneratedValue Integer id;
 	private String texto;
 	
-	public Registro() {}
+	public Register() {}
 	
-	public Registro(String texto) {
+	public Register(String texto) {
 		this.texto = texto;
 	}
 
@@ -40,9 +40,9 @@ public class Registro {
 
 	    if (this == o)
 	      return true;
-	    if (!(o instanceof Registro))
+	    if (!(o instanceof Register))
 	      return false;
-	    Registro registro = (Registro) o;
+	    Register registro = (Register) o;
 	    return Objects.equals(this.id, registro.id) && Objects.equals(this.texto, registro.texto);
 	  }
 

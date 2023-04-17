@@ -1,6 +1,6 @@
 package com.digitar120.registro.controller;
 
-import com.digitar120.registro.model.Registro;
+import com.digitar120.registro.model.Register;
 import com.digitar120.registro.exception.RegisterNotFoundException;
 import java.util.List;
 
@@ -24,25 +24,25 @@ public class RegisterController {
 	
 	// GET para todos los registros
 	@GetMapping("/registros")
-	List<Registro> all() {
+	List<Register> all() {
 		return repositorio.findAll();
 	}
 	
 	// POST para inserción de un registro
 	@PostMapping("/registros")
-	Registro nuevoRegistro(@RequestBody Registro nuevoRegistro) {
+	Register nuevoRegistro(@RequestBody Register nuevoRegistro) {
 		return repositorio.save(nuevoRegistro);
 	}
 	
 	// GET para un registro específico
 	@GetMapping("/registros/{id}")
-	Registro one(@PathVariable Integer id) {
+	Register one(@PathVariable Integer id) {
 		return repositorio.findById(id).orElseThrow(() -> new RegisterNotFoundException(id));
 	}
 	
 	// PUT para editar un registro
 	@PutMapping("/registros/{id}")
-	Registro editarRegistro(@RequestBody Registro nuevoRegistro, @PathVariable Integer id) {
+	Register editarRegistro(@RequestBody Register nuevoRegistro, @PathVariable Integer id) {
 		
 		return repositorio.findById(id)
 				.map(registro -> {
