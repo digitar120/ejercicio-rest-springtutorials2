@@ -49,10 +49,13 @@ public class RegisterController {
 					registro.setTexto(nuevoRegistro.getTexto());
 					return repositorio.save(registro);
 				})
+				.orElseThrow(() -> new RegisterNotFoundException(id));
+				/*
 				.orElseGet(() -> {
 					nuevoRegistro.setId(id);
 					return repositorio.save(nuevoRegistro);
 				});
+				*/
 	}
 	
 	@DeleteMapping("/registros/{id}")
