@@ -1,0 +1,15 @@
+CORRECCIONES
+	-> No trabajar sobre la rama main.
+		Hecho. Creé una rama "dev" y continué desde ahí.
+
+	-> Clases en inglés solamente
+		Hecho
+
+	-> Desarrollo en capas (crear paquetes para cada componente MVC).
+		Hecho.
+
+	-> Información inicial para la base de datos.
+		Hecho. Cambié la configuración en 'application.properties' para que la creación del esquema se haga con un script, y también agregué datos para precargar.
+
+	-> Agregar excepción al @PutMapping
+		A realizar.
