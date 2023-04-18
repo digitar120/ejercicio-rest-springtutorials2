@@ -12,4 +12,4 @@ CORRECCIONES
 		Hecho. Cambié la configuración en 'application.properties' para que la creación del esquema se haga con un script, y también agregué datos para precargar.
 
 	-> Agregar excepción al @PutMapping
-		Hecho. Se cambió el comportamiento del PutMapping de crear un nuevo registro con el ID especificado a arrojar una excepción.
+		A realizar.
